@@ -1,0 +1,27 @@
+{
+  "name": "qjs-example",
+  "version": "1.0.0",
+  "browser": "index.js",
+  "repository": "https://github.com/Matthiee/qjs-example.git",
+  "author": "Matthias Beerens",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "serve": "web-dev-server --node-resolve --watch --open --app-index index.html"
+  },
+  "dependencies": {
+    "@jitl/quickjs-ng-wasmfile-debug-sync": "^0.29.1",
+    "@jitl/quickjs-ng-wasmfile-release-sync": "^0.29.1",
+    "@jitl/quickjs-singlefile-browser-debug-sync": "^0.29.1",
+    "@jitl/quickjs-singlefile-browser-release-asyncify": "^0.29.1",
+    "@jitl/quickjs-singlefile-browser-release-sync": "^0.29.1",
+    "quickjs-emscripten": "^0.29.1",
+    "quickjs-emscripten-sync": "^1.5.2",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.3",
+    "typescript": "^5.4.3"
+  }
+}
